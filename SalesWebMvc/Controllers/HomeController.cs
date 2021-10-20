@@ -23,9 +23,13 @@ namespace SalesWebMvc.Controllers
             return View();
         }
 
-        public IActionResult Privacy()
+        public IActionResult About()
         {
+
+            ViewData["Message"] = "Your application description page";
+            ViewData["Aluno"] = "Vinicius Primo Bruneli";
             return View();
+
         }
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
