@@ -23,13 +23,21 @@ namespace SalesWebMvc.Controllers
             return View();
         }
 
+        public IActionResult Privacy()
+        {
+
+            ;
+            return View();
+
+        }
+
         public IActionResult About()
         {
 
-            ViewData["Message"] = "Your application description page";
+            ViewData["Message"] = "Salles Web MVC App from C# Coruse";
             ViewData["Aluno"] = "Vinicius Primo Bruneli";
-            return View();
 
+            return View();
         }
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
